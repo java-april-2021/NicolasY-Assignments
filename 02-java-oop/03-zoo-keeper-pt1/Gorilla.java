@@ -1,5 +1,5 @@
 public class Gorilla extends Mammal {
-    public Gorilla(int energyLevel){
+    public Gorilla(){
         super(energyLevel);
     }
     
