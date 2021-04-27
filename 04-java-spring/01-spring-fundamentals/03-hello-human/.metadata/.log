@@ -3138,3 +3138,15 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
 	... 74 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-04-26 17:34:58.497
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AtlfydUb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-04-26 17:34:58.499
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.AtlfydUb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-04-26 17:34:58.499
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-04-26 17:34:58.499
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.AtlfydUb => OK
