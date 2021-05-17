@@ -1,0 +1,28 @@
+package com.nyeon.languages.controllers;
+
+@RestController
+public class LanguageApi {
+	@Autowired
+	private LanguageService langService;
+	
+	@RequestMapping("/language")
+	public List<Language> index(){
+		return this.langService.getAllLanguages();
+	}
+	
+	@GetMapping("/languagesApi/{id}")
+	public Language getLanguage(@PathVariable("id") Long id) {
+		return this.langService.getOnelang(id);
+	}
+	
+	@PostMapping("/language")
+	public Language create(Language newLang) {
+		return this.langService.createLang(newLang);
+	}
+	
+	@DeleteMapping("/book/{id}")
+	public String removeLang(@PathVariable("id") Long id) {
+		this.langService.deleteLang(id);
+		return id + " removed";
+	}
+}

@@ -1,0 +1,20 @@
+package com.codingdojo.show.controllers;
+
+public class BooksController {
+	private final BookService bookService;
+    public Books(BookService bookService){
+        this.bookService = bookService;
+    }
+    @RequestMapping("/books")
+    public String books(Model model) {
+        List<Book> books = bookService.allBooks();
+        model.addAttribute("books", books);
+        return "books.jsp";
+    }
+    @RequestMapping("/books/{index}")
+    public String findBookByIndex(Model model, @PathVariable("index") int index) {
+        Book book = bookService.findBookByIndex(index);
+        model.addAttribute("book", book);
+        return "showBook.jsp";
+    }
+}

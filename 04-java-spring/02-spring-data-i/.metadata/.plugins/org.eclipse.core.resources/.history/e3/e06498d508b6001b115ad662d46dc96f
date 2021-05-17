@@ -1,0 +1,7 @@
+package com.nyeon.languages.controllers;
+
+@Controller
+@RequestMapping("/")
+public class LanguageController {
+
+}

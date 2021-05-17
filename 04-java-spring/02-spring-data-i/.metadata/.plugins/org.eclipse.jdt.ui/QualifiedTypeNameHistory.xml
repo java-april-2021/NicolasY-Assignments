@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="antlr.collections.List"/>
+    <fullyQualifiedTypeName name="com.sun.xml.bind.v2.schemagen.xmlschema.List"/>
+    <fullyQualifiedTypeName name="com.nyeon.languages.model.Language"/>
+    <fullyQualifiedTypeName name="com.nyeon.languages.services.LanguageService"/>
+</qualifiedTypeNameHistroy>

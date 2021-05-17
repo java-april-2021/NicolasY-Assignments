@@ -1,0 +1,10 @@
+package com.codingdojo.show.models;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Book {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
+}
