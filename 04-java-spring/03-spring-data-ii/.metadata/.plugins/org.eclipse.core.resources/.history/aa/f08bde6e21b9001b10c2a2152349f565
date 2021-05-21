@@ -1,0 +1,14 @@
+package com.nyeon.driverslicense.repository;
+
+import org.springframework.stereotype.Repository;
+
+import com.nyeon.driverslicense.model.Person;
+
+import java.util.List;
+
+@Repository
+public class PersonRepository extends CrudRepository<Person, Long>{
+	List<Person> findAll();
+	
+	
+}

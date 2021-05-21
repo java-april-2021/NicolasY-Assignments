@@ -1,0 +1,19 @@
+package com.nyeon.driverslicense.repository;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.Query;
+
+
+import com.nyeon.driverslicense.model.License;
+
+@Repository
+public class LicenseRepository extends CrudRepository<License, Long>{
+	public List<License> findAll;
+	
+	public License findTopByOrderByNumberDesc();
+	
+	public List<License> findByStateContaining(String state);
+}

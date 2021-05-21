@@ -1,0 +1,47 @@
+package com.nyeon.driverslicense.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.nyeon.driverslicense.model.Person;
+import com.nyeon.driverslicense.services.DriversLicenseService;
+
+@Controller
+@RequestMapping
+public class HomeController {
+	
+	@Autowired
+	private DriversLicenseService dService;
+	
+	//main page
+	@GetMapping("")
+	public String index(@ModelAttribute("person") Person person, Model viewModel) {
+		List<Person> people = dService.allPeople();
+		viewModel.addAttribute("people", people);
+		return "/index.jsp";
+	}
+	
+	//add person
+	@GetMapping("person/new")
+	public String addPerson (@ModelAttribute("person") Person person) {
+		return "/index.jsp";
+	}
+	
+	//add license
+	@GetMapping("license/new")
+	public String addLicense (@ModelAttribute("license") License license) {
+		return "license.jsp";
+	}
+	
+	//edit person
+	
+	//edit license
+	
+	//details page
+}
