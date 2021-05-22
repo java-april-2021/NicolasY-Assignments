@@ -1,0 +1,6 @@
+package com.nyeon.controllersandviews.repository;
+
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
+	User findByEmail(String email);
+}
