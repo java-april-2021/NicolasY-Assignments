@@ -1,0 +1,5 @@
+package com.nyeon.beltreview.controllers;
+
+public class UserController {
+
+}

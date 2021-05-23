@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.validation.constraints.NotBlank"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.lir.CompositeValue.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.nyeon.beltreview.model.User"/>
+    <fullyQualifiedTypeName name="org.springframework.validation.Errors"/>
+    <fullyQualifiedTypeName name="javax.validation.constraints.Email"/>
+    <fullyQualifiedTypeName name="org.springframework.validation.Validator"/>
+    <fullyQualifiedTypeName name="com.nyeon.beltreview.services.UserService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+</qualifiedTypeNameHistroy>

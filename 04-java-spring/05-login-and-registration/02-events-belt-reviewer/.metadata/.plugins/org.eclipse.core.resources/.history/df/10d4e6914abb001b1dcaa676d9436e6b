@@ -1,0 +1,5 @@
+package com.nyeon.beltreview.model;
+
+public class User {
+
+}

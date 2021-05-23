@@ -1,0 +1,5 @@
+package com.nyeon.beltreview.validators;
+
+public class UserValidator {
+
+}

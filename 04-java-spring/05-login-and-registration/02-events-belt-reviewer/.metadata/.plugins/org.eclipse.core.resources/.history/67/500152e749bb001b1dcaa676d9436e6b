@@ -1,0 +1,5 @@
+package com.nyeon.beltreview.repository;
+
+public class UserRepository {
+
+}
