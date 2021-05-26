@@ -1,0 +1,5 @@
+package com.nyeon.beltexam.validators;
+
+public class UserValidator {
+
+}

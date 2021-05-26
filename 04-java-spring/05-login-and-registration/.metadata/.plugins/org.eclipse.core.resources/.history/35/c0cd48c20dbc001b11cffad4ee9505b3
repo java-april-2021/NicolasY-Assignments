@@ -1,0 +1,5 @@
+package com.nyeon.beltexam.services;
+
+public class IdeaService {
+
+}

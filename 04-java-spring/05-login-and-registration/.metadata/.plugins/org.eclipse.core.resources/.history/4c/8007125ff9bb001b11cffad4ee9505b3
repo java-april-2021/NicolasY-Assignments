@@ -1,0 +1,36 @@
+package com.nyeon.beltexam.model;
+
+@Entity
+@Table(name="users")
+public class User {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
+	@NotBlank
+	private String firstName;
+	
+	@NotBlank
+	private String lastName;
+	
+	@NotBlank
+	@Email(message="Please enter a valid email address")
+	private String email;
+	
+	@NotBlank
+	@Size(min=8, message="Password must be at least 8 Characters")
+	private String password;
+	
+	@Transient
+	private String passwordConfirmation;
+	
+	@Column(updatable=false)
+	private Date createdAt;
+	
+	private Date updatedAt;
+	
+	
+	//constructor
+	public User() {
+		
+	}

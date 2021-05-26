@@ -1,0 +1,5 @@
+package com.nyeon.beltexam.model;
+
+public class User {
+
+}

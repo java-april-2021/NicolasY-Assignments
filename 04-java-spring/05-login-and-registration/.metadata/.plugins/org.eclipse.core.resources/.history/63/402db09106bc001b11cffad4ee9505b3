@@ -1,0 +1,15 @@
+package com.nyeon.beltexam.model;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+@Table(name="idea")
+public class Idea {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
+	@NotBlank
+	private String content;
+}

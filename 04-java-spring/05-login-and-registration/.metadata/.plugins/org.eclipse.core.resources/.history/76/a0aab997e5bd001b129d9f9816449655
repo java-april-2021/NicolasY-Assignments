@@ -1,0 +1,31 @@
+package com.nyeon.beltexam.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nyeon.beltexam.model.Idea;
+import com.nyeon.beltexam.repository.IdeaRepository;
+
+@Service
+public class IdeaService {
+	@Autowired
+	private IdeaRepository iRepo;
+	
+	public List<Idea> getIdeas(){
+		return this.iRepo.findAll();
+	}
+	
+	public Idea getById(Long id) {
+		return this.iRepo.findById(id).orElse(null);
+	}
+	
+	public Idea create(Idea idea) {
+		return this.iRepo.save(idea);
+	}
+	
+	public void delete(Long id) {
+		this.iRepo.deleteById(id);
+	}
+}
